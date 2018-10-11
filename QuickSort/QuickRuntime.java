@@ -50,6 +50,7 @@ public class QuickRuntime{
             int i = (low-1); 
             for (int j=low; j<high; j++){
                 
+                count++;
                 if (data[j] <= pivot){
                     
                     i++;
@@ -58,7 +59,6 @@ public class QuickRuntime{
                     int temp = data[i];
                     data[i] = data[j];
                     data[j] = temp;
-                    count++;
                 }
             }
 
